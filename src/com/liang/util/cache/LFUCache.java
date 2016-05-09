@@ -37,7 +37,8 @@ public class LFUCache<K, V> extends AbstractCache<K, V> {
 		}
 		while (it.hasNext()) {
 			Element e = it.next().getValue();
-			if (e.accessCount < min.accessCount || (e.accessCount == min.accessCount && e.lastAccess < min.lastAccess)) {
+			if (e.accessCount < min.accessCount
+					|| (e.accessCount == min.accessCount && e.lastAccess < min.lastAccess)) {
 				min = e;
 			}
 		}

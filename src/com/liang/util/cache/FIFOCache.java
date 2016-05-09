@@ -5,8 +5,8 @@ import java.util.LinkedHashMap;
 import java.util.Map.Entry;
 
 /**
- * @Description
- * @Solution
+ * @Description FIFO先进先出策略实现
+ * @author wuyiliang
  * @Date 2016年5月8日 下午10:31:45
  */
 public class FIFOCache<K, V> extends AbstractCache<K, V> {
